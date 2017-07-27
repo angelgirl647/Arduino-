@@ -1,6 +1,6 @@
 #include <Servo.h>
 
-int piezoPin=9; 
+//int piezoPin=9; 
 Servo servoLeft; 
 Servo servoRight;  
 int length = 2;
@@ -11,33 +11,33 @@ servoLeft.attach(13);
 servoRight.attach(12); 
 servoLeft.writeMicroseconds(1500);
 servoRight.writeMicroseconds(1500);
-pinMode(piezoPin, OUTPUT); 
+//pinMode(piezoPin, OUTPUT); 
 }
 
 void loop() {
-  tone(piezoPin, 659); 
-  delay(500); 
-  tone(piezoPin, 587); 
-  delay(500); 
-  tone(piezoPin, 587); 
-  delay(500); 
-  tone(piezoPin, 523); 
-  delay(500); 
-  tone(piezoPin, 659); 
-  delay(800); 
-  tone(piezoPin, 440); 
-  delay(800); 
-//for(int i=0; i<2; i++){
-//danceNow();
-//delay(100);
-//inBetween();
-//delay(1000);
-//fullCircle();
-//delay(2500);
-//inBetween();
-//delay(100);
-//}
+//  tone(piezoPin, 659); 
+//  delay(500); 
+//  tone(piezoPin, 587); 
+//  delay(500); 
+//  tone(piezoPin, 587); 
+//  delay(500); 
+//  tone(piezoPin, 523); 
+//  delay(500); 
+//  tone(piezoPin, 659); 
+//  delay(800); 
+//  tone(piezoPin, 440); 
+//  delay(800); 
+danceNow();
+delay(100);
+inBetween();
+delay(1000);
+fullCircle();
+delay(2500);
+inBetween();
+delay(100);
+
 }
+
 
 
 void goForward() {
